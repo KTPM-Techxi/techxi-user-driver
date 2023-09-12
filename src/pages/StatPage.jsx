@@ -124,8 +124,8 @@ export const pieData = {
 
 const StatPage = () => {
   return (
-    <div className="w-4/5 mx-auto p-4 flex">
-      <div className="w-2/3 mx-2 shadow-md">
+    <div className="p-4 flex">
+      <div className="mx-auto w-2/3 shadow-md">
         <div className='w-full flex justify-around bg-slate-100 p-3'>
             <div className='w-1/3 h-16 bg-white flex rounded-xl shadow-md'>
                 <img className="p-2 ml-2 aspect-square" src="https://cdn-icons-png.flaticon.com/512/8922/8922324.png" alt="revenue" />
@@ -160,18 +160,6 @@ const StatPage = () => {
             </div>
             <div className='w-2/3'>
              <Bar className='p-4' options={StackOptions} data={data} />
-            </div>
-        </div>
-      </div>
-      <div className='w-1/3 mx-2 shadow-md'>
-        <div className='w-full bg-slate-100 p-3'>
-            <div className='justify-between flex'>
-                <div className='font-bold text-md'>
-                  Reviews and Ratings
-                </div>
-                <div className='text-sm text-green-500'>
-                  See All
-                </div>
             </div>
         </div>
       </div>

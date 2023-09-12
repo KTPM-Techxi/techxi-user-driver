@@ -42,10 +42,10 @@ function App() {
     login();
   }, []);
 
-  rreturn (
+  return (
 		<Layout>
 			<Routes>
-				<Route path="/" element={<HomePage />} />
+				<Route path="/" element={<HomePage/>} />
 				<Route path="/login" element={<LoginPage />} />
 				<Route path="/register" element={<RegisterPage />} />
 				<Route path="/requests" element={<AllRequests />} />
