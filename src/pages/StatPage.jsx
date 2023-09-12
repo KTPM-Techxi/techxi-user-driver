@@ -130,22 +130,22 @@ const StatPage = () => {
             <div className='w-1/3 h-16 bg-white flex rounded-xl shadow-md'>
                 <img className="p-2 ml-2 aspect-square" src="https://cdn-icons-png.flaticon.com/512/8922/8922324.png" alt="revenue" />
                 <div className='my-auto ml-4'>
-                    <div className='font-bold text-sm'>Total Revenue</div>
-                    <div className='text-green-600'>$12300000</div>
+                    <div className='font-bold text-sm'>Total Money</div>
+                    <div className='text-green-600'>$123</div>
                 </div>
             </div>
             <div className='w-1/3 h-16 bg-white flex rounded-xl shadow-md mx-3'>
                 <img className="p-2 ml-2 aspect-square" src="https://cdn-icons-png.flaticon.com/512/4088/4088042.png" alt="booking" />
                 <div className='my-auto ml-4'>
                     <div className='font-bold text-sm'>Total Rides</div>
-                    <div className='text-green-600'>365438</div>
+                    <div className='text-green-600'>36</div>
                 </div>
             </div>
             <div className='w-1/3 h-16 bg-white flex rounded-xl shadow-md'>
-                <img className="p-2 ml-2 aspect-square" src="https://cdn-icons-png.flaticon.com/512/2898/2898588.png" alt="driver" />
+                <img className="p-2 ml-2 aspect-square" src="https://cdn-icons-png.flaticon.com/512/5900/5900214.png" alt="driver" />
                 <div className='my-auto ml-4'>
-                    <div className='font-bold text-sm'>Total Drivers</div>
-                    <div className='text-green-600'>1209</div>
+                    <div className='font-bold text-sm'>Total Kms</div>
+                    <div className='text-green-600'>120</div>
                 </div>
             </div>
         </div>
