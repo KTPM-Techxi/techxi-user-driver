@@ -32,10 +32,10 @@ function App() {
 
       // Connect to the database
       const mongodb = app.currentUser.mongoClient('mongodb-atlas');
-      const collection = mongodb.db('techxi').collection('bookings');
+      const bookingsCollections = mongodb.db('techxi').collection('bookings');
 
       // Everytime a change happens in the stream, add it to the list of events
-      for await (const change of collection.watch()) {
+      for await (const change of bookingsCollections.watch()) {
         setEvents((events) => [...events, change]);
       }
     };
@@ -46,7 +46,7 @@ function App() {
 		<Layout>
 			<Routes>
 				<Route path="/" element={<HomePage/>} />
-				<Route path="/login" element={<LoginPage />} />
+				<Route path="/login" element={<LoginPage user={user} setUser={setUser} events={events} setEvents={setEvents}/>} />
 				<Route path="/register" element={<RegisterPage />} />
 				<Route path="/requests" element={<AllRequests />} />
 				<Route path="/request" element={<RequestsPage />} />
