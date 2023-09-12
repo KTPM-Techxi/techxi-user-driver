@@ -269,6 +269,7 @@ function Map() {
       </Box>
       {/* Nút hiển thị bật tắt Modal */}
       <ToggleBtn
+        
         isModalOpen={state.isModalOpen}
         setState={setState}
         className="absolute z-[50] left-[7px] -top-[15px] "

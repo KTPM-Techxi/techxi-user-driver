@@ -52,7 +52,7 @@ export const HomePage = () => {
                 Welcome!
               </Link>
             </div>
-            <div className='flex justify-around mt-8'>
+            <div className='flex justify-around mt-5'>
               <div className='border-2 border-slate-200 w-1/3 rounded-md bg-green-500 my-auto'>
                     <div className="p-1 font-medium mx-auto my-auto">
                       <Link to={'/map'} className="flex items-center text-white">
@@ -69,6 +69,10 @@ export const HomePage = () => {
                       </Link>
                   </div>
               </div>
+            </div>
+            <div className='border-2 mt-5 flex justify-around'>
+              <div className='text-black font-bold'>Driver Found: </div>
+              <div className='flex text-black'><div className='text-black mx-2'>Name: _</div> - <div className='mx-2 text-black'>_ KM away</div></div>
             </div>
           </div>
         </div>
